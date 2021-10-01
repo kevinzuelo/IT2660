@@ -3,24 +3,24 @@ package Assignment2;
 public class main
 
 {
-    public static void main(String[] args)
-    {
-        DynamicArray studentArray = new DynamicArray();
-        studentArray.appendStudent(new Student("John", "260"));
-        studentArray.appendStudent(new Student("Timmy", "842"));
-        studentArray.appendStudent(new Student("Martin", "654"));
-        studentArray.appendStudent(new Student("Seth", "654"));
-        studentArray.insertStudent(new Student("Beth", "654"),1);
+    public static void main(String[] args) {
+        DynamicArray array = new DynamicArray();
 
-        studentArray.removeStudent();
-        studentArray.removeStudent();
-        studentArray.fetchStudent(3);
+        array.append(new Student("John", "260"));
+        array.append(new Student("Mary", "872"));
+        array.append(new Student("Liam", "127"));
+        array.append(new Student("Dylan", "001"));
+        array.append(new Student("Monica", "785"));
+        array.append(new Student("Carson", "852"));
+        array.append(new Student("Justin", "762"));
+        array.append(new Student("Sara", "758"));
 
-        studentArray.shrinkArray();
-        
+        array.insert(1, new Student("Lilith", "789"));
 
-        
-        studentArray.print();
+        array.removeAt(1);
+        array.shrinkSize();
+        array.print();
+
     }
 
 }
