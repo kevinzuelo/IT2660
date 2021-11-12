@@ -31,7 +31,7 @@ public class LinkedList<E>  implements Iterable <E> {
         size++;
     }
 
-    public void insertAfter(E newElement, int position ) {
+    public void insertAt(E newElement, int position ) {
         Node<E> temp = new Node<E>(newElement);
         Node<E> current = this.head;
 
@@ -76,8 +76,8 @@ public class LinkedList<E>  implements Iterable <E> {
         newlist.append("Three");
         newlist.append("Four");
         newlist.newHead("New Head");
-        newlist.insertAfter("Inserted Node", 2);
-        newlist.insertAfter("Inserted Node", 4);
+        newlist.insertAt("Inserted Node", 2);
+        newlist.insertAt("Inserted Node", 4);
 
         for (String str : newlist) {
             System.out.println(str);
