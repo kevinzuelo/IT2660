@@ -4,7 +4,6 @@ public class MergeSort {
     public  void mergeSort(int arr[]) {
         int numbers = arr.length;
 
-
         if(numbers < 2)
             return;
         int mid = numbers / 2;
@@ -14,6 +13,7 @@ public class MergeSort {
         for(int i = 0; i < mid; i++) {
             left[i] = arr[i];
         }
+        
         for(int i = mid; i < numbers; i++) {
             right[i - mid] = arr[i];
         }
